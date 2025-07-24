@@ -30,7 +30,7 @@ a {
 }
 
 .logo img {
-  height: 40px; /* Adjust logo size */
+  height: 40px; 
 }
 
 .menu {
@@ -52,19 +52,18 @@ a {
   border-radius: 5px;
 }
 
-/* Hide mobile cart on desktop */
+
 .mobile-cart {
   display: none;
 }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-  /* Hide normal menu links */
   .menu {
     display: none;
   }
 
-  /* Show mobile cart icon on right */
+  
   .mobile-cart {
     display: block;
     background: #ff6600;
@@ -81,9 +80,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 50px;  /* Reduced padding for less gap */
+  padding: 40px 50px;  
   background: #f9f9f9;
-  gap: 30px;           /* Slight gap between image & text */
+  gap: 30px;           
 }
 
 .banner-content {
@@ -94,10 +93,10 @@ a {
   font-size: 42px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 15px; /* Less bottom margin for tighter spacing */
+  margin-bottom: 15px; 
 }
 
-/* Black & Orange text colors */
+
 .banner-content .black-text {
   color: #000;
 }
@@ -111,7 +110,7 @@ a {
   color: #666;
   max-width: 450px;
   line-height: 1.6;
-  margin-bottom: 0; /* No extra gap */
+  margin-bottom: 0; 
 }
 
 .banner-image {
@@ -120,7 +119,7 @@ a {
 }
 
 .banner-image img {
-  width: 380px; /* Slightly smaller */
+  width: 380px; 
   max-width: 100%;
   border-radius: 12px;
 }
@@ -134,7 +133,7 @@ a {
   }
 
   .banner-image {
-    order: -1;        /* Moves image to top */
+    order: -1;        
     text-align: center;
     margin-bottom: 15px;
   }
@@ -160,11 +159,11 @@ a {
 }
 
 .section-title .orange-text {
-  color: #ff6600; /* Orange for "Our" */
+  color: #ff6600; 
 }
 
 .section-title .black-text {
-  color: #000; /* Black for "Plants" */
+  color: #000; 
 }
 
 /* Subtitle */
@@ -197,13 +196,13 @@ a {
   transform: translateY(-5px);
 }
 
-/* FIX: Full image fits nicely */
+
 .plant-card img {
   width: 100%;
   height: 220px;
-  object-fit: contain; /* Show full image without cropping */
+  object-fit: contain; 
   border-radius: 8px;
-  background: #f4f4f4; /* Light background behind image */
+  background: #f4f4f4; 
 }
 
 .plant-card h3 {
@@ -241,48 +240,94 @@ a {
 }
 
 
-/* Plants Lover Section */
+/* Lover Section Layout */
 .lover-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  background: #fff;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 50px;
+  background-color: #f5f6fb; 
+}
+
+/* Left: Image with Badge */
+.lover-image-container {
   position: relative;
-}
-
-.lover-section img {
-  width: 400px;
-  border-radius: 10px;
-}
-
-.lover-content {
   flex: 1;
-  padding-left: 30px;
+  max-width: 400px;
 }
 
-.lover-content h2 {
-  margin-bottom: 15px;
-}
-
-.lover-content ul {
-  list-style: disc;
-  padding-left: 20px;
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Trusted Badge */
 .trusted-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 80px;
+  top: -20px;
+  right: -20px; 
+  width: 150px;  
   animation: spin 6s linear infinite;
+  z-index: 2;
 }
 
+/* Right: Content */
+.lover-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.lover-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.lover-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #666;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Badge Spin Animation */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lover-section {
+    flex-direction: column;
+    text-align: left;
+    padding: 30px 20px;
+  }
+
+  .lover-image-container {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .trusted-badge {
+    display: none;
+  }
+
+  .lover-content h2 {
+    font-size: 24px;
+  }
+
+  .lover-content ul {
+    font-size: 15px;
+  }
+}
+
+
+
 
 /* Latest Deals */
 .deals-section {
