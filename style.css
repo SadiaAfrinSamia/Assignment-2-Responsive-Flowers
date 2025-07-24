@@ -47,7 +47,7 @@ a {
 }
 .menu a:hover {
   color: #000;        
-  font-weight: 700;   /* make text bold */
+  font-weight: 700;   
 }
 .menu a.cart {
   background: white;
@@ -70,12 +70,13 @@ a {
   
   .mobile-cart {
     display: block;
-    background: #ff6600;
-    color: #fff;
+    background: white;
+    color: black;
     padding: 8px 12px;
     border-radius: 5px;
-    font-weight: bold;
+    
   }
+  
 }
 
 
@@ -460,19 +461,19 @@ a {
   }
 
   .left-deals {
-    flex-direction: row;
+    flex-direction: column;
     overflow-x: auto;
-    gap: 15px;
+    gap: 35px;
   }
 
   .deal-card.small {
     min-width: 200px;
-    height: 160px;
+    height: 220px;
   }
 
   .deal-card.large {
     margin-top: 20px;
-    height: 220px;
+    height: 200px;
   }
 }
 
@@ -624,15 +625,15 @@ footer {
     display: none;
   }
 
-  .join-section input {
-    width: 70%;
-    margin-bottom: 10px;
+  .join-form input {
+    width: 80%;
+    margin-bottom: 0px;
   }
 
   footer {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
   }
   .footer-links {
     flex-direction: column;
