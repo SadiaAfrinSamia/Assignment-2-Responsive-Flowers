@@ -389,7 +389,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  background: rgba(0, 0, 0, 0.4); 
   z-index: 1;
 }
 
@@ -403,7 +403,7 @@ a {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.6;
-  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.6); /* clean strong shadow */
+  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.6); 
   z-index: 2;
 }
 
@@ -437,8 +437,8 @@ a {
   font-weight: 700;
   text-align: center;
   line-height: 1.5;
-  z-index: 2; /* must be above overlay */
-  text-shadow: 10px 3px 6px rgba(0, 0, 0, 0.6); /* optional: remove if overlay is strong */
+  z-index: 2; 
+  text-shadow: 10px 3px 6px rgba(0, 0, 0, 0.6); 
 }
 
 .deal-text span {
@@ -475,33 +475,44 @@ a {
 
 /* Join Section */
 .join-section {
-  background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+  background: url('news-letter-bg.png') center/cover no-repeat;
   text-align: center;
-  padding: 80px 20px;
+  padding: 150px 20px;
   color: #fff;
 }
 
+/* Heading */
 .join-section h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-.join-section input {
-  padding: 10px;
-  width: 250px;
-  border: none;
-  border-radius: 4px;
+/* Form Container */
+.join-form {
+  display: inline-flex;
+  border-radius: 0px;
+  overflow: hidden; /* Ensures flush edges */
 }
 
-.join-section button {
+/* Input Field */
+.join-form input {
+  padding: 10px;
+  width: 600px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Subscribe Button */
+.join-form button {
   padding: 10px 20px;
   background: #ff6600;
   color: #fff;
   border: none;
-  margin-left: 10px;
-  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
 }
+
 
 /* Footer */
 footer {
