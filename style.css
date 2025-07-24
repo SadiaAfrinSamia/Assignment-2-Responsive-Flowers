@@ -30,7 +30,7 @@ a {
 }
 
 .logo img {
-  height: 40px; 
+  height: 60px; 
 }
 
 .menu {
@@ -43,8 +43,12 @@ a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: all 0.2s ease; 
 }
-
+.menu a:hover {
+  color: #000;        
+  font-weight: 700;   /* make text bold */
+}
 .menu a.cart {
   background: white;
   color: black;
@@ -491,7 +495,7 @@ a {
 .join-form {
   display: inline-flex;
   border-radius: 0px;
-  overflow: hidden; /* Ensures flush edges */
+  overflow: hidden; 
 }
 
 /* Input Field */
@@ -518,20 +522,69 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 40px 50px;
-  background: #fff;
+  background: #f8fafd; 
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .footer-left {
   max-width: 300px;
 }
 
+.footer-logo {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 80px;
 }
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-column a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
 
 /* Responsive */
 @media (max-width: 992px) {
@@ -580,5 +633,9 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
   }
 }
