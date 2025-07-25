@@ -187,7 +187,6 @@ a {
   padding: 0 50px 50px;
 }
 
-/* Plant Card */
 .plant-card {
   background: #fff;
   padding: 15px;
@@ -387,7 +386,6 @@ a {
   display: block;
 }
 
-/* Text Overlay directly on image */
 .deal-overlay {
   position: absolute;
   top: 0;
@@ -431,7 +429,6 @@ a {
   min-height: 300px;
 }
 
-/* Text Overlay */
 .deal-text {
   position: absolute;
   top: 50%;
